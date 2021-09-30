@@ -1,0 +1,38 @@
+@mixin break($length) {
+    @media screen and (max-width: $length) {
+      @content;
+    }
+  }
+
+  @mixin clearfix {
+    clear: both;
+  }
+
+  @mixin social-media {
+    @each $name in $social-media-div {
+      $i: index($social-media-div, $name);
+      div.#{$name} {
+        background: nth($social-media-height-width, $i);
+      }
+    }
+  }
+
+  @mixin headline-h1($screen-width) {
+    @if $screen-width == 767px {
+      font-size: 2em;
+      padding-top: 50px;
+    }
+    @if $screen-width == 459px {
+      font-size: 1.5em;
+      padding-top: 30px;
+    }
+  }
+
+  @mixin width-height($x: inherit, $y: inherit) {
+    width: $x;
+    height: $y;
+  }
+
+  @mixin margin($args...){
+    margin: $args;
+  }

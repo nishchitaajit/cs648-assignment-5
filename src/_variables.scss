@@ -1,0 +1,17 @@
+$red: #F25C43;
+$white: #FFF;
+$grey: #666;
+$white2: #F5F6F6;
+$grey2: #30353D;
+$red2: #E65C43;
+
+$font-body: 'Roboto', sans-serif;
+
+$image-path: '../images';
+
+$social-media-div: "one", "two", "three", "four";
+$one: url(#{$image-path}/social-media.png) 0 0;
+$two: url(#{$image-path}/social-media.png) -38px 0;
+$three: url(#{$image-path}/social-media.png) -76px 0;
+$four: url(#{$image-path}/social-media.png) -114px 0;
+$social-media-height-width: $one, $two, $three, $four;

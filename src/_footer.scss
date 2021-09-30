@@ -1,0 +1,45 @@
+.greybar {
+    @include width-height(100%, 90px);
+    background: $white2;
+    @include clearfix();
+    padding-top: 30px;
+    @include break(459px) {
+      display: none;
+    }
+  }
+  footer {
+    @include width-height(100%, 120px);
+    background: $grey2;
+    text-align: center;
+    color: $white;
+    padding-top: 50px;
+    @include break(459px) {
+      text-align: center;
+    }
+    p,
+    img {
+      @include break(459px) {
+        float: none;
+       @include margin(0px);
+      }
+    }
+  }
+  .social-media {
+
+    @include margin(0 auto);
+    width: 165px;
+
+
+    a {
+      display: block;
+      @include width-height(36px, 36px);
+      text-indent: -9999px;
+    }
+
+  }
+  @include social-media();
+
+  .social-media div {
+    float: left;
+    margin-right:5px;
+  }

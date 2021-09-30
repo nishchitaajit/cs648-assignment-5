@@ -1,0 +1,23 @@
+body {
+  font-family: $font-body;
+  font-size: 1em;
+  line-height: 2em;
+  background: url(#{$image-path}/bg.gif) $white repeat-x;
+  @include margin(0px);
+}
+main {
+  width: 940px;
+  @include margin(0 auto);
+  padding: 0 10px;
+  @include break(959px) {
+    width: 80/100 * 959px;
+  }
+
+  @include break(767px) {
+    width: 60/100 * 767px;
+  }
+
+  @include break(459px) {
+    width: 65/100 * 459px;
+  }
+}
